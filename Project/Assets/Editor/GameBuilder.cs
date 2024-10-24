@@ -4,7 +4,9 @@ using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
-public class GameBuilder
+namespace Platformer
+{ 
+    public class GameBuilder
 {
         public enum BuildType
     {
@@ -152,4 +154,5 @@ public class GameBuilder
 
         return options;
     }
+}
 }
