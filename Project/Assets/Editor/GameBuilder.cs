@@ -23,8 +23,10 @@ namespace Platformer
     [MenuItem(gameName + "/Build Development Build")]
     public static void DevelopmentBuild()
     {
+        Debug.Log("Build started.");
         buildNumber = GetBuildVersionFromCommandLine();
         BuildPlayer(BuildType.Development, buildNumber);
+        Debug.Log("Build finished.");
     }
     
     [MenuItem(gameName + "/Build Release Build")]
